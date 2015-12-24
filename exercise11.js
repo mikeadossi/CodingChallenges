@@ -12,3 +12,5 @@
  	console.log('How many euros are you exchanging? '+ amt.toFixed(2) );
  })
 
+ // ParseInt is only for integers, we need to use parseFloat.
+ // Also we used a new function toFixed() to fix our decimal places to 2 digits.
