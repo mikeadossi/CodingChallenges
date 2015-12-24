@@ -9,7 +9,7 @@ prompt.get(['Length','Width'],function(err,result){
 	var Width = parseInt(result.Width)
 	var oneGallon = 350
 	var totalSquareFootage = Length * Width
-	var gallonsNeeded = Math.ceil(totalSquareFootage / oneGallon) <-- NEW!!! Use of ceil
+	var gallonsNeeded = Math.ceil(totalSquareFootage / oneGallon) //<-- NEW!!! Use of ceil
 
 	console.log( totalSquareFootage+' '+gallonsNeeded)
 })
