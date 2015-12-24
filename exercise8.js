@@ -10,7 +10,7 @@ prompt.get(['number of people eating','number of pizzas','even number of slices 
 	var totalSlices = numOfPizzas * numOfSlices
 	var pizzaPerPerson = totalSlices / numOfPpl
 
-	console.log('There are '+ numOfppl +' people with '+ numOfPizzas +' pizzas.')
+	console.log('There are '+ numOfPpl +' people with '+ numOfPizzas +' pizzas.')
 	evenSlices(numOfSlices);
 	console.log('Each person gets '+ numOfSlices +' pieces of pizza.')
 })
