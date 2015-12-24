@@ -11,6 +11,6 @@ prompt.get(['Length','Width'],function(err,result){
 	var totalSquareFootage = Length * Width
 	var gallonsNeeded = Math.ceil(totalSquareFootage / oneGallon) //<-- NEW!!! Use of ceil
 
-	console.log( totalSquareFootage+' '+gallonsNeeded)
+	console.log('Your total square footage was '+ totalSquareFootage+' and you need '+gallonsNeeded+' gallons of paint.')
 })
 
