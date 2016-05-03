@@ -2,7 +2,7 @@
 
 var response;
 var prompt = require('prompt-sync').prompt;
-
+console.log('Answer with "Y" or "N"')
 var object1 = {}
 object1.text = 'Is the car silent when you turn the key?'
 
