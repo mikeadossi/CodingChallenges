@@ -5,13 +5,13 @@ var prompt = require('prompt');
 prompt.start();
 
 console.log('Multistate Sales Tax Calculator')
-console.log("Choose from one of these options for an abbreviated state - TX, CA, or NY")
+console.log("Hint: When asked for state choose from one of these options - TX, CA, or NY")
 prompt.get(['orderAmt','enter abbreviated state'],function(err,result){
 	var orderAmt = parseInt(result.orderAmt);
 	var state = result['enter abbreviated state'];
 	var taxAmt;
 	checkState();
-	var amtAfterTax = orderAmt * taxAmt
+	var amtAfterTax = orderAmt + taxAmt
 	
 
 	console.log('Your given order amount was '+orderAmt)
