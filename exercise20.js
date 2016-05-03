@@ -28,5 +28,13 @@ prompt.get(['orderAmt','enter abbreviated state'],function(err,result){
 		if(state == 'NY'){
 			taxAmt = orderAmt * 0.04
 		}
+		if(state !== 'TX' && state !== 'CA' && state !== 'NY'){
+			console.log('Invalid state entry')
+			process.exit()
+		}
+		if( isNaN(orderAmt) ){
+			console.log('Invalid orderAmt entry')
+			process.exit()
+		}
 	}
 })
