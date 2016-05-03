@@ -13,6 +13,7 @@ var totalCost;
 
 //THE FOLLOWING IS A LESSON IN REFACTORING! (find alternative way to solve problem in selfcheckout assignment)
 function getNumericValue(query){
+		
 		var numberValue;
 
 		while(isNaN(numberValue)){
